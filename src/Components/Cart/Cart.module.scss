@@ -1,0 +1,170 @@
+.overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  visibility: hidden;
+  
+}
+.overlayVisible {
+  visibility: visible;
+}
+.mainCart {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  width: 420px;
+  height: 100%;
+  right: 0;
+  background-color: #ffffff;
+  box-shadow: -10px 4px 24px rgba(0, 0, 0, 0.1);
+  padding: 0 20px;
+  .aboveInfo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    border-bottom: 1px solid rgba(200, 248, 252, 0.74);
+  }
+  .cardBlock {
+    flex: 1;
+    overflow: auto;
+    padding: 20px 0 20px 0;
+  }
+  .close {
+    padding: 3px;
+    border: solid 1px rgba(0, 0, 0, 0.3);
+    border-radius: 6px;
+    height: 15px;
+    cursor: pointer;
+    &:hover {
+      opacity: 1.3;
+    }
+    &:active {
+      opacity: 0.5;
+    }
+  }
+  .cost {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin-bottom: 20px;
+    .costUl {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      .costLi {
+        display: flex;
+      }
+      div {
+        flex: 2;
+        position: relative;
+        top: -3px;
+        margin: 0 5px 0 5px;
+        border-bottom: 1px dashed #4fc955;
+      }
+    }
+
+    .buttonBye {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      button {
+        height: 100px;
+        width: 400px;
+        border: none;
+        border-radius: 20px;
+        padding: 30px;
+        margin: 20px;
+        color: #ffffff;
+        background-color: #4fc955;
+        font-size: 24px;
+        transition: all 500ms ease;
+        &:hover {
+          background: lighten(#4fc955, 15%);
+        }
+        &:active {
+          background: darken(#4fc955, 15%);
+        }
+      }
+      .arrow {
+        position: absolute;
+        transition: all 500ms ease;
+        width: 24px;
+        right: 60px;
+        color: #ffffff;
+      }
+    }
+  }
+  .cartItem {
+    display: flex;
+    align-items: center;
+    border: 1px solid #0af04f1e;
+    border-radius: 25px;
+    margin-bottom: 10px;
+    .title {
+      flex-wrap: wrap;
+      flex: 1;
+    }
+    .delete {
+      position: relative;
+      justify-content: end;
+      border: solid 1px rgba(0, 0, 0, 0.3);
+      border-radius: 6px;
+      height: 20px;
+      padding: 3px;
+      margin-right: 10px;
+      cursor: pointer;
+    }
+    .cartProduct {
+      padding: 5px;
+      border-radius: 25px;
+      height: 100px;
+      margin-right: 10px;
+    }
+  }
+}
+.emptyCartImg {
+  height: 300px;
+}
+.emptyCart {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.buttonReturn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  button {
+    height: 100px;
+    width: 400px;
+    border: none;
+    border-radius: 20px;
+    padding: 30px;
+    margin: 20px;
+    color: #ffffff;
+    background-color: #4fc955;
+    font-size: 24px;
+    transition: all 500ms ease;
+    &:hover {
+      background: lighten(#4fc955, 15%);
+    }
+    &:active {
+      background: darken(#4fc955, 15%);
+    }
+  }
+  .arrow {
+    position: absolute;
+    transform: scale(-1, 1);
+    transition: all 500ms ease;
+    width: 24px;
+    left: 60px;
+    color: #ffffff;
+  }
+}

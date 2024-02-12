@@ -1,0 +1,77 @@
+body {
+  margin: 0;
+  background-color: rgba(216, 241, 241, 0.692);
+  font-family: Raleway, serif;
+}
+* {
+  font-family: Raleway, serif;
+}
+footer{
+  display: flex;
+  flex-direction: column;
+  margin: 30px;
+}
+.wrapper {
+  background: rgba(200, 248, 252, 0.74);
+  box-shadow: 0px 10px 20px rgba(164, 168, 168, 0.5);
+  border-radius: 20px;
+  max-width: 1366px;
+  height: max-content;
+  margin: 50px auto;
+  padding-bottom: 30px;
+  a {
+    color: inherit;
+    outline: none;
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    list-style-type: none;
+  }
+  h1 {
+    margin: 0;
+    padding: 0;
+  }
+  a {
+    text-decoration: none;
+  }
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+  max-height: 60px;
+  border-bottom: 1px solid #ffff;
+
+  .headerLeft {
+    cursor: pointer;
+    display: flex;
+    .logo {
+      height: 50px;
+      margin-right: 20px;
+    }
+  }
+  .headerRight {
+    display: flex;
+    align-items: center;
+    svg {
+      margin: 0 10px 0 10px;
+    }
+    b {
+      margin-right: 10px;
+      text-align: right;
+      width: 100px;
+    }
+    .cartSvg {
+      cursor: pointer;
+    }
+    .favoriteSvg {
+      cursor: pointer;
+    }
+    .personalSvg {
+      cursor: pointer;
+    }
+  }
+}

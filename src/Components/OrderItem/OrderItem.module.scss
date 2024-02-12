@@ -1,0 +1,28 @@
+.mainOrderItem {
+  padding: 10px 30px;
+
+  .liOrderItem {
+    display: flex;
+    border: 1px solid #ffffff;
+    border-radius: 20px;
+    justify-content: space-between;
+    margin: 5px 5px;
+    padding: 0 10px;
+    .liCost {
+      display: flex;
+      align-items: center;
+      p {
+        padding: 0 5px;
+      }
+    }
+    .imageblock {
+      display: flex;
+      align-items: center;
+      .imageOrder {
+        height: 150px;
+        border-radius: 20px;
+        padding: 10px;
+      }
+    }
+  }
+}
